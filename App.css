@@ -1,0 +1,105 @@
+
+.taskBlock{
+    display: flex;
+    align-items: center; 
+}
+.doneButton, .deleteButton, .addButton {
+    margin: 0px 0px 5px 7px;   
+    cursor: pointer;
+}
+.doneButton:hover, .deleteButton:hover{
+    transform: scale(1.05);
+    transition:all .2s ease-in;
+}
+
+.editButton{
+   background-image: url("https://image.flaticon.com/icons/svg/1001/1001371.svg");
+   margin-left: 35%;
+   margin-bottom: 5px;
+}
+.doneButton{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148767.svg");
+}
+.doneButton ,.deleteButton, .addButton, .editButton, .cancelButton, .editCancelButton,.startCalendar{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+.editCancelButton{
+    background-image: url("https://image.flaticon.com/icons/svg/271/271206.svg");
+}
+.deleteButton{
+    background-image: url("https://image.flaticon.com/icons/svg/148/148766.svg");
+}
+.addButton{
+   background-image: url("https://image.flaticon.com/icons/svg/148/148781.svg");
+   margin-right: 5px;
+}
+.cancelButton{
+    background-image: url("https://image.flaticon.com/icons/svg/709/709487.svg");
+}
+
+.tasks{
+    list-style-type: none;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+ .AddingTaskBlock{
+     display: flex;
+ }
+.inputTask{
+    border: 1px solid #000;
+    margin-left: 46%;
+    border-radius: 5px;
+    margin-right: 5px;
+    max-height: 20px;
+}
+.inputTaskEdit{
+    border: 1px solid #000;
+    border-radius: 5px;
+    margin-right: 5px;
+    max-height: 20px;
+}
+.editContainer{
+    display: flex;
+}
+.startCalendar{
+    background-image: url("https://image.flaticon.com/icons/svg/833/833593.svg");
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.TaskDate{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border: 2px;
+    font-size: 17px;
+}
+ .Calendar{ 
+    padding-left: 15px;
+    position: absolute;
+}
+.changeMonthAdd{
+    background-image: url("https://image.flaticon.com/icons/svg/271/271226.svg");
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-left: 80%;
+}
+.changeButtonsBlock{
+  display: flex;
+
+}
+
+.changeMonthDecrease{
+    background-image: url("https://image.flaticon.com/icons/svg/271/271218.svg");
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+.showBLock{
+    
+
+}
