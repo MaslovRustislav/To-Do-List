@@ -9,14 +9,15 @@ const router = Router()
 //        await todo.save()
 //        res.redirect("/")
 // })
-router.post('createTask', async (req,res)=>{
+router.post('/createTask', async (req,res)=>{
+    console.log("Enter Create Task---")
         try{
             console.log("Called post taks")
             console.log('nam----e', req.body);
                 // const {name,date} = req.body;
                 const calendarTask = req.body.name;
                 const calendarDate = req.body.date;
-                const calendarBool = req.body.calendarBool
+                const calendarBool = req.body.done
 
                 const  task = new Task({
                     name: calendarTask,
