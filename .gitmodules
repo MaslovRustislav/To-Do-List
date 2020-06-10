@@ -1,0 +1,3 @@
+[submodule "TaskTable"]
+	path = TaskTable
+	url = https://github.com/MaslovRustislav/TaskTable.git
