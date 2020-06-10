@@ -1,15 +1,16 @@
 const {Schema,model,Types} =require('mongoose')
 
 const schema = new Schema({
-    name:
-    {
-    type:String, 
-    required:true
+    name:{
+        type:String, 
+        required:true
 },
-    date:{
-        type:String,
+
+    done:{
+        type:Number,
         required:true
     },
+   
     links : [{
         type:Types.ObjectId, 
         ref:'Link'

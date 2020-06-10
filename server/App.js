@@ -8,6 +8,7 @@ const bodyParser = require('body-parser')
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "http://localhost:3000");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    res.header("Access-Control-Allow-Methods", 'GET, PUT, PATCH, POST, DELETE');
     next();
   });
   app.use(bodyParser.json())
@@ -16,6 +17,8 @@ app.use(function(req, res, next) {
   app.use("/api",require('./routes/tasks.routes'))
   app.use(express.urlencoded({extended:true}))
 const mongoose = require('mongoose')
+
+
 
 
 const PORT = config.get('port') || 6000
@@ -39,4 +42,4 @@ async function start(){
 
 start()
 
-app.listen(PORT,()=> console.log(`App has beem started on port ${PORT}...`))
+app.listen(PORT,()=> console.log(`App has been started on port ${PORT}...`))
